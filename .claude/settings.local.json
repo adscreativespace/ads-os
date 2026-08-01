@@ -1,0 +1,11 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(where python *)",
+      "PowerShell(winget install --id Python.Python.3.12 -e --source winget --accept-package-agreements --accept-source-agreements)",
+      "PowerShell(Get-Process python -ErrorAction SilentlyContinue)",
+      "Bash(echo \"--- Desktop ---\"; ls -la ~/Desktop 2>&1 | head -20 *)",
+      "Bash(tasklist //FI \"IMAGENAME eq python.exe\" //FI \"WINDOWTITLE eq ADS Office Suite\")"
+    ]
+  }
+}
